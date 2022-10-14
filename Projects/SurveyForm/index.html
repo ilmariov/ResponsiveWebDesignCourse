@@ -6,7 +6,65 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Mario's Web Development Survey Form</h1>
+        <section>
+            <h1 id="title">Survey Form</h1>
+            <h2>Mario's Web Responsive Design</h2>
+            <p id="description">Thank you for taking the time to help us improve our services</p>
+        </section>
+        <form action="https://register-demo.freecodecamp.org" id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </label>
+                <label for="email" id="email-label">Email 
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </label>
+                <label for="number" id="number-label">Age 
+                    <input type="number" name="number" id="number" min="14" max="100" placeholder="Age">
+                </label>
+                <label for="dropdown">How did you hear about us? 
+                    <select name="dropdown" id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">YouTube Ads</option>
+                        <option value="2">Through a Friend</option>
+                        <option value="3">Street Advertising</option>
+                        <option value="4">Googleing</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Would you recommend our service?</label>
+                <label for="yes">
+                    <input type="radio" class="inline" name="recommendation" id="yes" value="1"> Definitely
+                </label>
+                <label for="maybe">
+                    <input type="radio" class="inline" name="recommendation" id="maybe" value="2"> Maybe
+                </label>
+                <label for="not-sure">
+                    <input type="radio" class="inline" name="recommendation" id="not-sure" value="3"> Not sure
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Which services are you more interested? <span style="font-size: 12px;">(More than one option selectable)</span></label>
+                <label for="data-a">
+                    <input type="checkbox" class="inline" name="data-a" id="data-a" value="1"> Data Analysis
+                </label>
+                <label for="machine-l">
+                    <input type="checkbox" class="inline" name="machine-l" id="machine-l" value="2"> Machine Learning
+                </label>
+                <label for="web-app">
+                    <input type="checkbox" class="inline" name="web-app" id="web-app" value="3"> Web Applications
+                </label>
+                <label for="mobile">
+                    <input type="checkbox" class="inline" name="mobile" id="mobile" value="4"> Mobile Apps
+                </label>
+                <label for="suggest" class="suggbox">Please let us know any comment or suggestion:
+                    <textarea name="suggest" id="suggest" cols="60" rows="5" placeholder="Enter your comments here..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
     </body>
 
 </html>
